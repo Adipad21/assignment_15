@@ -1,0 +1,156 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: blanchedalmond;
+    color: #000000;
+}
+
+/* Structure */
+#content {
+    width: 99%;
+    margin: auto; /* center horizontally */
+}
+img{
+    width: 100%;
+    max-width: 300px;
+    max-height: 500px;
+    border-radius: 5px;
+}
+#crafts-div {
+    display: flex;
+    justify-content: center;
+}
+.craft-list {
+    cursor: pointer;
+    padding: 5px;
+}
+
+#heading a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Modal */
+.columns {
+    display: flex;
+    flex-direction: row;
+}
+
+.w3-container{
+    background: blanchedalmond;
+}
+#dialog section {
+    padding: 5px;
+    margin: 10px;
+}
+
+#dialog-details p, #craft-details p {
+    margin: 10px 0px; 
+    border-radius: 5px;
+}
+#place {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#place img {
+    width: 250px;
+    height: 250px;
+    max-height: 100%;
+    max-width: 100%;
+}
+label {
+    display: block;
+}
+.inline {
+    display: inline;
+}
+#upload{
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+}
+#img-prev-section {
+    width:150px;
+    max-width: 150px;
+    border: 1px solid brown;
+}
+#img-prev {
+    padding: 5px;
+}
+#img-button{
+    width:fit-content;
+}
+.box{
+    border-radius: 10px;
+    margin-right: 20px;
+}
+.des{
+    width: 300px;
+}
+#submit {
+    display: flex;
+    gap: 5px;
+}
+.button{
+    background-color: brown;
+    font-size: 12px;
+    padding: 3px 6px;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid black;
+    text-align: center;
+}
+#add-craft-form {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    flex-direction: column;
+}
+#plus, #edit, #delete{
+    cursor:pointer;
+}
+#plus{
+    font-weight: bold;
+}
+#edit, #delete{
+    text-decoration: none;
+}
+h1{
+    text-align: center;
+}
+.hidden {
+    display: none;
+}
+
+#edit-link {
+    float: right;
+    margin-right: 10px;
+    cursor: pointer;
+    z-index: 2;
+  }
+  
+  #delete-link {
+    float: right;
+    cursor: pointer;
+    z-index: 2;
+    font-weight: bold;
+  }
+  
+
+@media (min-width: 1000px) {
+    #place img {
+        width: 300px;
+        height: 300px;
+    }
+    #add-craft-form {
+        flex-direction: row;
+        justify-content: start;
+    }
+    #img-prev-section {
+        width: 150px;
+        max-width: 150px;
+    }
+
+}

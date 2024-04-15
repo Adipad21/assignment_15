@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--
+        Author: Aditya Padala
+    -->
+    <title>CSCE 242: Assignment 15 - Server CRUD with MongoDb</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body id="content">
+    <div id="heading">
+        <h1>Buy and Sell Crafts <a href="#" id="add-link">+</a></h1>
+    </div>
+
+    <div id="crafts-div"></div>
+
+    <div id="dialog" class="w3-modal hide-content">
+        <div class="w3-modal-content">
+          <div class="w3-container">
+            <span id = "dialog-close" class="w3-button w3-display-topright">&times;
+            </span>
+            <section id="dialog-details">
+                <section id="form">
+                    <form id="add-craft-form" method="post" class="hidden">
+                        <section id="upload">
+                            <p id="img-prev-section">
+                                <img id="img-prev">
+                            </p>
+                            <p id="img-button">
+                                <label for="image" class="button">Select an Image</label>
+                                <input type="file" id="image" name="img" accept="image/*" style="display: none;">
+
+                            </p>
+                        </section>
+                        <section id="main">
+                            <h2>Make Changes to your Craft</h2>
+                            <input type="hidden" id="_id" name="_id">
+                        <p>
+                            <label for="name ">Craft Name:</label>
+                            <input type="text" id="name" name="name" class="box" minlength="3" required />
+                        </p>
+                        <p>
+                            <label for="description">Description:</label>
+                            <textarea id="description" name="description" class="box des" minlength="3" required ></textarea>
+                        </p>
+        
+                        <p id="supply-p ">
+                            <label class="inline">Supplies:</label>
+                            <button href="#" id="add-supply" class="button box">Add Supply</button>
+                            <section id="supply-boxes">
+                                <input type="text" required>
+                            </section>
+                        </p>
+                        <p id="submit">
+                            <button type="cancel" id="cancel" class="button">Cancel</button>
+                            <button type="submit" class="button">Save</button>
+                        </p>
+                    </section>
+                    </form>
+                </section>
+
+                <section id="dialog-content" class="columns">
+                    <section id="place"></section>
+                    <section id="craft-details"></section>
+                </section>
+            </section>
+          </div>
+        </div>
+    </div>  
+    <script src="script.js"></script>
+</body>
+
+</html>
